@@ -35,6 +35,15 @@ another. Based on the Oracle JDK Migration Guide and OpenRewrite recipes.
 
 ## Automation
 
+Analysis tools:
+
+- `jdeps --jdk-internals -R <jars>` — find JDK-internal API usage
+- `jdeprscan --for-removal <jars>` — find APIs deprecated for removal
+- Eclipse Migration Toolkit for Java (EMT4J) — static and runtime
+  compatibility reports for JDK 8 → 11 → 17 → 21
+  (`sh bin/analysis.sh -f 8 -t 21 -o report.html <files...>`)
+- Eclipse Transformer — binary-level `javax.*` → `jakarta.*` renaming
+
 OpenRewrite composite recipes (`org.openrewrite.recipe:rewrite-migrate-java`):
 
 - `org.openrewrite.java.migrate.UpgradeToJava17`
@@ -64,5 +73,9 @@ mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
   https://docs.oracle.com/en/java/javase/21/migrate/migrating-jdk-8-later-jdk-releases.html
 - OpenRewrite Java migration recipes:
   https://github.com/openrewrite/rewrite-migrate-java
+- Eclipse Migration Toolkit for Java (EMT4J):
+  https://github.com/adoptium/emt4j
+- Eclipse Transformer (Jakarta package renaming):
+  https://github.com/eclipse-transformer/transformer
 - JEP 403: Strongly Encapsulate JDK Internals by Default
 - JEP 411: Deprecate the Security Manager for Removal

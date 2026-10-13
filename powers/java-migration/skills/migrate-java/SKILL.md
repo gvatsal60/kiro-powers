@@ -20,6 +20,11 @@ Guide the agent through migrating a Java codebase between JDK versions
   the target JDK
 - Scan for JDK-internal usage with `jdeps` from the target JDK:
   `jdeps --jdk-internals -R <jars-or-classes>`
+- Scan for APIs deprecated for removal with `jdeprscan`:
+  `jdeprscan --class-path <cp> --for-removal <jars-or-classes>`
+- Optionally run the Eclipse Migration Toolkit for Java (EMT4J)
+  for a detailed compatibility report:
+  `sh bin/analysis.sh -f <from> -t <to> -o report.html <files...>`
 
 ## Step 2: Prepare a migration branch
 
@@ -44,6 +49,9 @@ Guide the agent through migrating a Java codebase between JDK versions
   `Thread.stop()/suspend()/resume()`, `Runtime.exec()` legacy overloads
 - `URLClassLoader` casting: the system class loader is no longer a
   `URLClassLoader` on JDK 9+
+- `javax.*` → `jakarta.*` namespace renames (Jakarta EE): use the
+  Eclipse Transformer for binary-level package renaming when source
+  changes are not feasible
 
 ## Step 5: Run OpenRewrite recipes
 

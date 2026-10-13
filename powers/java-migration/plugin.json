@@ -1,12 +1,11 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "java-migration",
-  "version": "1.0.0",
-  "description": "Migrate Java projects from one version to another (JDK 8, 11, 17, 21, 25) with build tool updates, breaking-change fixes, and OpenRewrite recipes",
   "author": {
     "name": "Vatsal Gupta",
     "url": "https://github.com/gvatsal60"
   },
+  "description": "Migrate Java projects from one version to another (JDK 8, 11, 17, 21, 25) with build tool updates, breaking-change fixes, and OpenRewrite recipes",
+  "homepage": "https://kiro.dev/docs/powers/",
   "keywords": [
     "java",
     "jdk",
@@ -19,7 +18,8 @@
     "openrewrite",
     "compiler"
   ],
-  "homepage": "https://kiro.dev/docs/powers/",
+  "license": "Apache-2.0",
+  "name": "java-migration",
   "repository": "https://github.com/gvatsal60/kiro-powers",
-  "license": "Apache-2.0"
+  "version": "1.0.0"
 }

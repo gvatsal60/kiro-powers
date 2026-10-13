@@ -61,7 +61,7 @@ scan_jdk_internals() {
         return 0
     fi
     echo "Scanning for JDK-internal API usage with jdeps..."
-    find . -name '*.jar' -not -path '*/.git/*' -print0 | while IFS= read -r -d '' jar; do
+    find . -name '*.jar' -not -path '*/.git/*' -print | while IFS= read -r jar; do
         jdeps --jdk-internals "$jar" 2>/dev/null || true
     done
 }

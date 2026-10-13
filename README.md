@@ -27,7 +27,7 @@ context and tools automatically. Inside, you'll find:
 
 Every power follows the Agent Plugins specification and lives in its own folder:
 
-```
+```text
 powers/
 └── <power-name>/
     ├── plugin.json    # Required manifest (name, version, description, keywords)
@@ -41,6 +41,9 @@ powers/
 
 ## 🛠️ Installation
 
+Each power lives in its own directory under `powers/` with a `plugin.json`
+manifest at its root, so the repository can hold any number of powers.
+
 To use the powers from this repository, just follow these simple steps:
 
 1. **Open Kiro:**
@@ -48,8 +51,13 @@ To use the powers from this repository, just follow these simple steps:
    * Select **Add Custom Power**
    * Choose **Import power from GitHub**
    * Enter: `https://github.com/gvatsal60/kiro-powers`
+   * Alternatively, clone the repository and choose
+     **Import power from a folder**, then select the power directory
 
-2. **Customize According to Your Project:**
+2. **Keep powers up to date:**
+   * Powers panel → power → **Check for updates** → **Install updates**
+
+3. **Customize According to Your Project:**
    * 🎯 Replace `[Power Name]`
    * 📧 Update `[contact email]`
    * 💡 Follow `[coding style guide]`

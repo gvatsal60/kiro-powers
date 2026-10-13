@@ -1,17 +1,23 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "example",
+  "name": "java-migration",
   "version": "1.0.0",
-  "description": "Example Kiro power demonstrating the Agent Plugins structure",
+  "description": "Migrate Java projects from one version to another (JDK 8, 11, 17, 21, 25) with build tool updates, breaking-change fixes, and OpenRewrite recipes",
   "author": {
     "name": "Vatsal Gupta",
     "url": "https://github.com/gvatsal60"
   },
   "keywords": [
-    "example",
-    "kiro",
-    "power",
-    "agent-plugins"
+    "java",
+    "jdk",
+    "jvm",
+    "migration",
+    "upgrade",
+    "lts",
+    "maven",
+    "gradle",
+    "openrewrite",
+    "compiler"
   ],
   "homepage": "https://kiro.dev/docs/powers/",
   "repository": "https://github.com/gvatsal60/kiro-powers",

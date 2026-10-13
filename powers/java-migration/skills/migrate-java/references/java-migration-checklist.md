@@ -68,14 +68,14 @@ mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
 
 ## References
 
-- Oracle JDK Migration Guide: https://docs.oracle.com/en/java/javase/21/migrate/
+- Oracle JDK Migration Guide: <https://docs.oracle.com/en/java/javase/21/migrate/>
 - Migrating from JDK 8 to later releases:
-  https://docs.oracle.com/en/java/javase/21/migrate/migrating-jdk-8-later-jdk-releases.html
+  <https://docs.oracle.com/en/java/javase/21/migrate/migrating-jdk-8-later-jdk-releases.html>
 - OpenRewrite Java migration recipes:
-  https://github.com/openrewrite/rewrite-migrate-java
+  <https://github.com/openrewrite/rewrite-migrate-java>
 - Eclipse Migration Toolkit for Java (EMT4J):
-  https://github.com/adoptium/emt4j
+  <https://github.com/adoptium/emt4j>
 - Eclipse Transformer (Jakarta package renaming):
-  https://github.com/eclipse-transformer/transformer
+  <https://github.com/eclipse-transformer/transformer>
 - JEP 403: Strongly Encapsulate JDK Internals by Default
 - JEP 411: Deprecate the Security Manager for Removal

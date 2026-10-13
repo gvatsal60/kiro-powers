@@ -27,7 +27,7 @@ context and tools automatically. Inside, you'll find:
 
 Every power follows the Agent Plugins specification and lives in its own folder:
 
-```
+```text
 powers/
 └── <power-name>/
     ├── plugin.json    # Required manifest (name, version, description, keywords)

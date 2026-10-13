@@ -8,68 +8,47 @@
 ![GitHub forks](https://img.shields.io/github/forks/gvatsal60/kiro-powers)
 ![GitHub stars](https://img.shields.io/github/stars/gvatsal60/kiro-powers)
 
-Welcome to the `Kiro Powers` repository! A curated collection of powers for
-[Kiro](https://kiro.dev) — plugins built on the [Agent Plugins](https://agent-plugins.org/)
-specification that give your AI agent instant access to specialized tools and
-best practices. When you mention relevant keywords, Kiro loads the power's
-context and tools automatically. Inside, you'll find:
+🎯 A curated collection of [Kiro](https://kiro.dev) **powers** — plugins built on the open [Agent Plugins](https://agent-plugins.org/) spec that give your AI agent instant access to specialized skills and tools. Mention a keyword, and Kiro activates the matching power automatically.
 
-1. 📄 README.md
-2. 📝 LICENSE
-3. 🚫 .gitignore
-4. 🧑‍🤝‍🧑 CODE_OF_CONDUCT.md
-5. ✍️ CONTRIBUTING.md
-6. 💰 FUNDING.yml
-7. 📜 CHANGELOG.md
-8. ⚡ powers/
+## ✨ Powers
 
-## 📦 Power Structure
+| Power | What it does |
+| :--- | :--- |
+| 🔄 **java-migration** | Migrate Java projects between JDK versions (8, 11, 17, 21, 25) — build tool updates, breaking-change fixes, and OpenRewrite recipes |
 
-Every power follows the Agent Plugins specification and lives in its own folder:
+## 📦 Repository Layout
 
 ```text
-powers/
-└── <power-name>/
-    ├── plugin.json    # Required manifest (name, version, description, keywords)
-    ├── skills/        # Agent Skills with task-specific instructions
-    │   └── <skill>/
-    │       ├── SKILL.md
-    │       ├── scripts/
-    │       └── references/
-    └── mcp.json       # MCP server configuration (optional)
+kiro-powers/
+├── ⚡ powers/              # Kiro powers (one folder per power)
+│   └── java-migration/
+│       ├── plugin.json     # Power manifest (Agent Plugins spec)
+│       └── skills/         # Agent Skills with SKILL.md
+├── 🧩 snippets/            # VS Code snippets (markdown, sh, yaml)
+├── 🐳 .devcontainer/       # DevContainer setup
+├── 🤖 .github/             # Dependabot and workflows
+└── 🛠️ lint configs         # markdownlint, yamllint, pre-commit
 ```
 
-## 🛠️ Installation
+## 🚀 Installation
 
-Each power lives in its own directory under `powers/` with a `plugin.json`
-manifest at its root, so the repository can hold any number of powers.
+1. Open Kiro → **Powers** panel → **Add Custom Power**
+2. Choose **Import power from GitHub**
+3. Enter: `https://github.com/gvatsal60/kiro-powers`
+4. 💡 Or clone locally and use **Import power from a folder**
 
-To use the powers from this repository, just follow these simple steps:
+## 🔄 Updates
 
-1. **Open Kiro:**
-   * Go to the **Powers** panel
-   * Select **Add Custom Power**
-   * Choose **Import power from GitHub**
-   * Enter: `https://github.com/gvatsal60/kiro-powers`
-   * Alternatively, clone the repository and choose
-     **Import power from a folder**, then select the power directory
+Powers panel → power → **Check for updates** → **Install updates**
 
-2. **Keep powers up to date:**
-   * Powers panel → power → **Check for updates** → **Install updates**
+## 🤝 Contributing
 
-3. **Customize According to Your Project:**
-   * 🎯 Replace `[Power Name]`
-   * 📧 Update `[contact email]`
-   * 💡 Follow `[coding style guide]`
-
-## 💬 Contributing
-
-We love contributions! If you'd like to help improve this project, please review our
+Contributions are welcome! See our
 [Contribution Guidelines](https://github.com/gvatsal60/kiro-powers/blob/HEAD/CONTRIBUTING.md)
 before submitting pull requests.
 
 ## 🛡️ License
 
-This project is licensed under the Apache License 2.0 License -
-see the [LICENSE](https://github.com/gvatsal60/kiro-powers/blob/HEAD/LICENSE)
+Apache License 2.0 — see the
+[LICENSE](https://github.com/gvatsal60/kiro-powers/blob/HEAD/LICENSE)
 file for details.
